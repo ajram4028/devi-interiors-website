@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Devi Interiors & PVC Doors</title>
+  <meta name="description" content="Browse our luxury interior portfolio — modular kitchens, PVC wardrobes, TV units, false ceilings and bedroom interiors in Thiruthuraipoondi." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="brand">Devi Interiors</span>
+    <span class="sub">& PVC Doors — Thiruthuraipoondi</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html" class="active">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-overlay"></div>
+<div class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ══ PAGE HERO ══ -->
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('images/hero-bg.jpg')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="section-label">Our Work</span>
+    <h1 class="section-title">Project <span class="text-gold">Gallery</span></h1>
+  </div>
+</div>
+
+<!-- ══ GALLERY ══ -->
+<section class="gallery-section" style="padding-top:72px;padding-bottom:120px;">
+  <div class="container">
+
+    <div class="section-header reveal" style="margin-bottom:40px;">
+      <span class="section-label">Crafted With Care</span>
+      <h2 class="section-title">A Look at Our <span class="text-gold">Finest Work</span></h2>
+      <div class="gold-line"></div>
+      <p class="section-sub">Real projects. Premium finishing. Satisfied clients.</p>
+    </div>
+
+    <!-- Filter -->
+    <div class="gallery-filters reveal" data-delay="100">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+      <button class="filter-btn" data-filter="door">PVC Doors</button>
+      <button class="filter-btn" data-filter="wardrobe">Wardrobe</button>
+      <button class="filter-btn" data-filter="tvunit">TV Unit</button>
+      <button class="filter-btn" data-filter="ceiling">Ceiling</button>
+      <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+    </div>
+
+    <!-- Masonry Grid -->
+    <div class="gallery-masonry">
+
+      <div class="gallery-item reveal" data-category="kitchen">
+        <img src="images/gallery-kitchen-1.jpg" alt="Modular Kitchen Project 1" loading="lazy" />
+        <div class="gallery-overlay">
+          <div class="gallery-label">Modern Kitchen</div>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="bedroom" data-delay="60">
+        <img src="images/gallery-bedroom-1.jpg" alt="Bedroom Interior" loading="lazy" />
+        <div class="gallery-overlay">
+          <div class="gallery-label">Bedroom Interior</div>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="tvunit" data-delay="120">
+        <img src="images/gallery-tvunit-1.jpg" alt="Luxury TV Unit" loading="lazy" />
+        <div class="gallery-overlay">
+          <div class="gallery-label">Luxury TV Unit</div>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="wardrobe" data-delay="0">
+        <img src="images/gallery-wardrobe-1.jpg" alt="PVC Wardrobe" loading="lazy" />
+        <div class="gallery-overlay">
+          <div class="gallery-label">PVC Wardrobe</div>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="ceiling" data-delay="80">
+        <img src="images/gallery-ceiling-1.jpg" alt="False Ceiling" loading="lazy" />
+        <div class="gallery-overlay">
+          <div class="gallery-label">False Ceiling Design</div>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="kitchen" data-delay="160">
+        <img src="images/gallery-kitchen-2.jpg" alt="Premium Kitchen" loading="lazy" />
+        <div class="gallery-overlay">
+          <div class="gallery-label">Premium Kitchen</div>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="door" data-delay="0">
+        <img src="images/gallery-door-1.jpg" alt="PVC Door" loading="lazy" />
+        <div class="gallery-overlay">
+          <div class="gallery-label">PVC Door Design</div>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="wardrobe" data-delay="80">
+        <img src="images/gallery-wardrobe-2.jpg" alt="Premium Cupboard" loading="lazy" />
+        <div class="gallery-overlay">
+          <div class="gallery-label">Premium Cupboard</div>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="bedroom" data-delay="160">
+        <img src="images/gallery-bedroom-2.jpg" alt="Luxury Bedroom" loading="lazy" />
+        <div class="gallery-overlay">
+          <div class="gallery-label">Luxury Bedroom</div>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="tvunit" data-delay="0">
+        <img src="images/gallery-tvunit-2.jpg" alt="TV Panel Design" loading="lazy" />
+        <div class="gallery-overlay">
+          <div class="gallery-label">TV Panel Design</div>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="ceiling" data-delay="80">
+        <img src="images/gallery-ceiling-2.jpg" alt="LED False Ceiling" loading="lazy" />
+        <div class="gallery-overlay">
+          <div class="gallery-label">LED False Ceiling</div>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="kitchen" data-delay="160">
+        <img src="images/gallery-kitchen-3.jpg" alt="Elegant Kitchen" loading="lazy" />
+        <div class="gallery-overlay">
+          <div class="gallery-label">Elegant Kitchen</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div style="text-align:center;margin-top:72px;" class="reveal">
+      <p style="color:var(--white-mid);font-size:0.95rem;margin-bottom:28px;">Inspired by what you see? Let's create something extraordinary for your home.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="https://wa.me/918608140709" target="_blank" class="btn btn-gold">
+          <i class="fa-brands fa-whatsapp"></i> Get a Free Quote
+        </a>
+        <a href="contact.html" class="btn btn-outline">
+          <i class="fa-solid fa-envelope"></i> Contact Us
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lb-close" aria-label="Close">&times;</button>
+  <img class="lightbox-img" src="" alt="Gallery Image" id="lb-img" />
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <div class="brand">Devi Interiors &amp; PVC Doors</div>
+      <div class="sub">Thiruthuraipoondi, Tamil Nadu</div>
+    </div>
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="https://instagram.com/DEVI_INTERIORS__" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.me/918608140709" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="tel:+918608140709" class="social-icon"><i class="fa-solid fa-phone"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">&copy; 2024 Devi Interiors &amp; PVC Doors. All rights reserved.</div>
+    <div class="footer-rating"><span class="stars">⭐⭐⭐⭐⭐</span> 5.0 · 156 Reviews on Google</div>
+  </div>
+</footer>
+
+<!-- ══ FLOATING BUTTONS ══ -->
+<div class="float-btns">
+  <a href="https://wa.me/918608140709" target="_blank" class="float-btn float-wa" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="float-tooltip">Chat on WhatsApp</span>
+  </a>
+  <a href="tel:+918608140709" class="float-btn float-call" aria-label="Call">
+    <i class="fa-solid fa-phone"></i>
+    <span class="float-tooltip">Call Us</span>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

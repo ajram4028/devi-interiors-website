@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Devi Interiors & PVC Doors</title>
+  <meta name="description" content="Contact Devi Interiors & PVC Doors in Thiruthuraipoondi. Call, WhatsApp or visit us for your premium interior design consultation." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* Contact page extras */
+    .contact-ig {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 20px;
+      background: linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);
+      border-radius: var(--radius);
+      color: #fff;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      transition: var(--transition);
+      margin-top: 24px;
+    }
+    .contact-ig:hover { opacity: 0.88; transform: translateY(-3px); box-shadow: 0 10px 32px rgba(253,29,29,0.25); }
+
+    .hours-card {
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-top: 24px;
+    }
+    .hours-card h4 {
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      color: var(--gold);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      color: var(--white-mid);
+      padding: 8px 0;
+      border-bottom: 1px solid var(--glass-border);
+    }
+    .hours-row:last-child { border-bottom: none; }
+    .hours-row .day { color: var(--white); font-weight: 500; }
+    .hours-row .open { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="brand">Devi Interiors</span>
+    <span class="sub">& PVC Doors — Thiruthuraipoondi</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-overlay"></div>
+<div class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ══ PAGE HERO ══ -->
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('images/hero-bg.jpg')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="section-label">Get In Touch</span>
+    <h1 class="section-title">Contact <span class="text-gold">Us</span></h1>
+  </div>
+</div>
+
+<!-- ══ CONTACT ══ -->
+<section class="contact-section" style="padding-top:80px;padding-bottom:120px;">
+  <div class="container">
+
+    <!-- LEFT: Info -->
+    <div class="contact-info">
+      <div class="reveal">
+        <span class="section-label">Reach Out</span>
+        <h2 class="section-title">Let's Build Something <span class="text-gold">Beautiful</span></h2>
+        <div class="gold-line"></div>
+        <p class="section-sub" style="margin-bottom:40px;">
+          Whether you're planning a new home or refreshing an existing space — we're here to help. Reach us by call, WhatsApp, or visit our showroom.
+        </p>
+      </div>
+
+      <div class="contact-cards">
+
+        <div class="contact-card reveal" data-delay="0">
+          <div class="contact-icon">📍</div>
+          <div class="contact-detail">
+            <div class="label">Our Location</div>
+            <div class="value">Tiruvarur Road, near Arubadai Murugan Kovil,<br />Thiruthuraipoondi, Tamil Nadu — 614713</div>
+          </div>
+        </div>
+
+        <div class="contact-card reveal" data-delay="80">
+          <div class="contact-icon">📞</div>
+          <div class="contact-detail">
+            <div class="label">Phone</div>
+            <div class="value">
+              <a href="tel:+918608140709" style="color:var(--gold);">+91 86081 40709</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card reveal" data-delay="160">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-detail">
+            <div class="label">Email</div>
+            <div class="value">
+              <a href="mailto:deviinteriorsttp@gmail.com" style="color:var(--gold);">deviinteriorsttp@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card reveal" data-delay="240">
+          <div class="contact-icon">⭐</div>
+          <div class="contact-detail">
+            <div class="label">Google Rating</div>
+            <div class="value">5.0 ⭐ · 156 Happy Clients</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Buttons -->
+      <div class="contact-btns reveal" data-delay="300">
+        <a href="tel:+918608140709" class="btn btn-gold">
+          <i class="fa-solid fa-phone"></i> Call Now
+        </a>
+        <a href="https://wa.me/918608140709" target="_blank" class="btn btn-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+
+      <!-- Instagram -->
+      <a href="https://instagram.com/DEVI_INTERIORS__" target="_blank" class="contact-ig reveal" data-delay="380">
+        <i class="fa-brands fa-instagram fa-lg"></i>
+        Follow us @DEVI_INTERIORS__
+      </a>
+
+      <!-- Hours -->
+      <div class="hours-card reveal" data-delay="440">
+        <h4><i class="fa-regular fa-clock" style="margin-right:8px;"></i> Working Hours</h4>
+        <div class="hours-row">
+          <span class="day">Monday – Saturday</span>
+          <span class="open">9:00 AM – 7:00 PM</span>
+        </div>
+        <div class="hours-row">
+          <span class="day">Sunday</span>
+          <span style="color:var(--white-mid);">By Appointment</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Map -->
+    <div class="map-wrap reveal" data-delay="150">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7876.44!2d79.642!3d10.525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baade00000000%3A0x0!2sThiruthuraipoondi%2C+Tamil+Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Devi Interiors Location Map">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <div class="brand">Devi Interiors &amp; PVC Doors</div>
+      <div class="sub">Thiruthuraipoondi, Tamil Nadu</div>
+    </div>
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="https://instagram.com/DEVI_INTERIORS__" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.me/918608140709" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="tel:+918608140709" class="social-icon"><i class="fa-solid fa-phone"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">&copy; 2024 Devi Interiors &amp; PVC Doors. All rights reserved.</div>
+    <div class="footer-rating"><span class="stars">⭐⭐⭐⭐⭐</span> 5.0 · 156 Reviews on Google</div>
+  </div>
+</footer>
+
+<!-- ══ FLOATING BUTTONS ══ -->
+<div class="float-btns">
+  <a href="https://wa.me/918608140709" target="_blank" class="float-btn float-wa" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="float-tooltip">Chat on WhatsApp</span>
+  </a>
+  <a href="tel:+918608140709" class="float-btn float-call" aria-label="Call">
+    <i class="fa-solid fa-phone"></i>
+    <span class="float-tooltip">Call Us</span>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
