@@ -167,21 +167,23 @@
  * In a future admin system, this array can be fetched from an API/JSON file.
  */
 const GALLERY_ITEMS = [
-  { src: 'images/p1.jpeg',  category: 'tvunit',   label: 'TV Unit Design'       },
-  { src: 'images/p2.jpeg',  category: 'kitchen',  label: 'Modular Kitchen'      },
-  { src: 'images/p5.jpeg',  category: 'tvunit',   label: 'Luxury TV Panel'      },
-  { src: 'images/p7.jpeg',  category: 'wardrobe', label: 'PVC Wardrobe'         },
-  { src: 'images/p8.jpeg',  category: 'ceiling',  label: 'False Ceiling'        },
-  { src: 'images/p14.jpeg', category: 'kitchen',  label: 'Premium Kitchen'      },
-  { src: 'images/p16.jpeg', category: 'door',     label: 'PVC Door'             },
-  { src: 'images/p18.jpeg', category: 'wardrobe', label: 'Premium Cupboard'     },
-  { src: 'images/p20.jpeg', category: 'pooja',    label: 'Pooja Unit'           },
-  { src: 'images/p22.jpeg', category: 'bedroom',  label: 'Luxury Bedroom'       },
-  { src: 'images/p29.jpeg', category: 'door',     label: 'Pooja Room Door'      },
-  { src: 'images/p33.jpeg', category: 'tvunit',   label: 'TV Panel Design'      },
-  { src: 'images/p34.jpeg', category: 'glass',    label: 'Glass Display Unit'   },
-  { src: 'images/p37.jpeg', category: 'ceiling',  label: 'LED False Ceiling'    },
-  { src: 'images/p38.jpeg', category: 'wardrobe', label: 'Cupboard Works'       },
+  { src: 'images/p1.jpeg',  category: 'tvunit',   label: ''       },
+  { src: 'images/p2.jpeg',  category: 'kitchen',  label: ''      },
+  { src: 'images/p5.jpeg',  category: 'tvunit',   label: ''      },
+  { src: 'images/p7.jpeg',  category: 'wardrobe', label: ''         },
+  { src: 'images/p8.jpeg',  category: 'ceiling',  label: ''        },
+  { src: 'images/p14.jpeg', category: 'kitchen',  label: ''      },
+  { src: 'images/p16.jpeg', category: 'door',     label: ''             },
+  { src: 'images/p18.jpeg', category: 'wardrobe', label: ''     },
+  { src: 'images/p20.jpeg', category: 'pooja',    label: ''           },
+  { src: 'images/p22.jpeg', category: 'bedroom',  label: ''       },
+  { src: 'images/p29.jpeg', category: 'door',     label: ''      },
+  { src: 'images/p33.jpeg', category: 'tvunit',   label: ''      },
+  { src: 'images/p34.jpeg', category: 'glass',    label: ''   },
+  { src: 'images/p37.jpeg', category: 'ceiling',  label: ''    },
+  { src: 'images/p38.jpeg', category: 'wardrobe', label: ''       },
+  
+  
 ];
 
 /* ── Gallery Filter & Render ── */
