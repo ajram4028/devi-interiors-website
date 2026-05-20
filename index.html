@@ -1,300 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Devi Interiors & PVC Doors — Luxury Interior Solutions, Thiruthuraipoondi</title>
-<meta name="description" content="Premium interior design, modular kitchens, PVC doors and wardrobes in Thiruthuraipoondi, Tamil Nadu. 5.0 Google Rating."/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-:root {
-  --black: #0B0B0B;
-  --black-soft: #111111;
-  --black-mid: #161616;
-  --black-card: #181818;
-  --gold: #D4AF37;
-  --gold-light: #e8c94a;
-  --gold-dim: rgba(212,175,55,0.12);
-  --gold-border: rgba(212,175,55,0.32);
-  --white: #F5F5F5;
-  --white-dim: rgba(245,245,245,0.07);
-  --white-mid: rgba(245,245,245,0.55);
-  --glass: rgba(255,255,255,0.04);
-  --glass-border: rgba(255,255,255,0.09);
-  --shadow-gold: 0 0 40px rgba(212,175,55,0.18);
-  --shadow-deep: 0 24px 64px rgba(0,0,0,0.7);
-  --radius: 16px;
-  --radius-lg: 24px;
-  --ease: cubic-bezier(0.25,0.46,0.45,0.94);
-  --t: 0.45s cubic-bezier(0.25,0.46,0.45,0.94);
-  --font-d: 'Outfit', sans-serif;
-  --font-b: 'Poppins', sans-serif;
-  --font-u: 'Inter', sans-serif;
-}
+  <!-- ══ Primary SEO ══ -->
+  <title>Devi Interiors & PVC Doors — Premium Interior Design, Thiruthuraipoondi</title>
+  <meta name="description" content="Devi Interiors & PVC Doors — Premium modular kitchens, PVC doors, wardrobes, TV units & false ceilings in Thiruthuraipoondi, Tamil Nadu. 5.0 ⭐ Google Rating · 156+ Happy Clients." />
+  <meta name="keywords" content="interior design Thiruthuraipoondi, modular kitchen Thiruthuraipoondi, PVC doors Tamil Nadu, wardrobe design, TV unit design, false ceiling, Devi Interiors" />
+  <meta name="author" content="Devi Interiors & PVC Doors" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://deviinteriors.in/" />
 
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;font-size:16px}
-body{background:var(--black);color:var(--white);font-family:var(--font-b);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-img{display:block;width:100%;height:100%;object-fit:cover}
-a{text-decoration:none;color:inherit}
-::-webkit-scrollbar{width:4px}
-::-webkit-scrollbar-track{background:var(--black)}
-::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px}
-::selection{background:var(--gold);color:var(--black)}
+  <!-- ══ Open Graph (WhatsApp, Facebook) ══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Devi Interiors & PVC Doors" />
+  <meta property="og:title" content="Devi Interiors & PVC Doors — Premium Interior Design, Thiruthuraipoondi" />
+  <meta property="og:description" content="Premium modular kitchens, PVC doors, wardrobes & false ceilings in Thiruthuraipoondi. 5.0 ⭐ Google Rating · 156+ Happy Clients." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://deviinteriors.in/" />
 
-/* NAVBAR */
-.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:22px 64px;display:flex;align-items:center;justify-content:space-between;transition:var(--t)}
-.navbar.scrolled{background:rgba(11,11,11,0.9);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border-bottom:1px solid var(--glass-border);padding:14px 64px}
-.nav-logo{display:flex;flex-direction:column;line-height:1.15}
-.nav-logo .brand{font-family:var(--font-d);font-size:1.2rem;font-weight:700;color:var(--gold);letter-spacing:0.02em}
-.nav-logo .sub{font-family:var(--font-u);font-size:0.58rem;font-weight:400;color:var(--white-mid);letter-spacing:0.18em;text-transform:uppercase}
-.nav-links{display:flex;gap:44px;list-style:none}
-.nav-links a{font-family:var(--font-u);font-size:0.78rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--white-mid);position:relative;transition:color 0.3s}
-.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--gold);transition:width 0.35s ease}
-.nav-links a:hover,.nav-links a.active{color:var(--gold)}
-.nav-links a:hover::after,.nav-links a.active::after{width:100%}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;z-index:1002}
-.hamburger span{display:block;width:24px;height:1.5px;background:var(--white);transition:var(--t);transform-origin:center}
-.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}
-.hamburger.open span:nth-child(2){opacity:0}
-.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}
-.mobile-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:998;opacity:0;pointer-events:none;transition:opacity 0.4s}
-.mobile-overlay.open{opacity:1;pointer-events:all}
-.mobile-nav{position:fixed;top:0;right:-100%;width:72vw;height:100vh;background:rgba(11,11,11,0.97);backdrop-filter:blur(32px);-webkit-backdrop-filter:blur(32px);border-left:1px solid var(--glass-border);z-index:999;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:44px;transition:right 0.5s cubic-bezier(0.77,0,0.175,1)}
-.mobile-nav.open{right:0}
-.mobile-nav a{font-family:var(--font-d);font-size:2rem;font-weight:600;color:var(--white-mid);letter-spacing:0.05em;transition:color 0.3s}
-.mobile-nav a:hover{color:var(--gold)}
+  <!-- ══ Twitter Card ══ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Devi Interiors & PVC Doors — Thiruthuraipoondi" />
+  <meta name="twitter:description" content="Premium interior design in Thiruthuraipoondi. Modular kitchens, PVC doors, wardrobes & more. 5.0 ⭐" />
+  <meta name="twitter:image" content="images/og-image.jpg" />
 
-/* BUTTONS */
-.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 36px;border-radius:60px;font-family:var(--font-u);font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;border:none;transition:var(--t);position:relative;overflow:hidden}
-.btn-gold{background:var(--gold);color:var(--black)}
-.btn-gold::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 0%,rgba(255,255,255,0.2) 50%,transparent 100%);transform:translateX(-100%);transition:transform 0.6s ease}
-.btn-gold:hover{box-shadow:0 0 36px rgba(212,175,55,0.55);transform:translateY(-2px)}
-.btn-gold:hover::before{transform:translateX(100%)}
-.btn-outline{background:transparent;color:var(--white);border:1px solid rgba(245,245,245,0.22)}
-.btn-outline:hover{border-color:var(--gold);color:var(--gold);box-shadow:0 0 24px rgba(212,175,55,0.15);transform:translateY(-2px)}
-.btn-whatsapp{background:#25D366;color:#fff}
-.btn-whatsapp:hover{background:#20ba5a;box-shadow:0 0 32px rgba(37,211,102,0.45);transform:translateY(-2px)}
+  <!-- ══ Favicon ══ -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <!-- Fallback: if no favicon images yet, use an SVG data URI with gold D -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230B0B0B'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='serif' font-size='22' font-weight='bold' fill='%23D4AF37'%3ED%3C/text%3E%3C/svg%3E" />
 
-/* HERO */
-.hero{position:relative;height:100vh;min-height:640px;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;background-color:#1a1008;animation:heroZoom 14s ease-out forwards}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,11,11,0.85) 0%,rgba(11,11,11,0.5) 50%,rgba(11,11,11,0.75) 100%)}
-#particles-canvas{position:absolute;inset:0;pointer-events:none;z-index:1}
-.hero-content{position:relative;z-index:2;text-align:center;max-width:860px;padding:0 24px}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 22px;border:1px solid var(--gold-border);border-radius:40px;font-family:var(--font-u);font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:30px;background:var(--gold-dim);opacity:0;animation:fadeUp 0.8s 0.3s ease forwards}
-.hero-title{font-family:var(--font-d);font-size:clamp(2.8rem,6vw,5.2rem);font-weight:800;line-height:1.07;letter-spacing:-0.02em;color:var(--white);margin-bottom:24px;opacity:0;animation:fadeUp 0.9s 0.55s ease forwards}
-.hero-title span{color:var(--gold)}
-.hero-sub{font-family:var(--font-b);font-size:clamp(1rem,2vw,1.2rem);font-weight:300;color:var(--white-mid);margin-bottom:52px;max-width:560px;margin-left:auto;margin-right:auto;opacity:0;animation:fadeUp 0.9s 0.8s ease forwards}
-.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;opacity:0;animation:fadeUp 0.9s 1.05s ease forwards}
-.scroll-indicator{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0;animation:fadeUp 1s 1.4s ease forwards}
-.scroll-indicator span{font-family:var(--font-u);font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--white-mid)}
-.scroll-line{width:1px;height:48px;background:linear-gradient(to bottom,var(--gold),transparent);animation:scrollLine 1.8s infinite}
-@keyframes heroZoom{from{transform:scale(1.08)}to{transform:scale(1)}}
-@keyframes scrollLine{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
-@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+  <!-- ══ Theme color (Android Chrome, Safari pinned tab) ══ -->
+  <meta name="theme-color" content="#0B0B0B" />
+  <meta name="msapplication-TileColor" content="#0B0B0B" />
 
-/* PAGE HERO */
-.page-hero{height:52vh;min-height:380px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
-.page-hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;background-color:#1a1008;animation:heroZoom 14s ease-out forwards}
-.page-hero-overlay{position:absolute;inset:0;background:rgba(11,11,11,0.8)}
-.page-hero-content{position:relative;z-index:2;padding:0 24px}
+  <!-- ══ Geo tags ══ -->
+  <meta name="geo.region" content="IN-TN" />
+  <meta name="geo.placename" content="Thiruthuraipoondi, Tamil Nadu" />
+  <meta name="geo.position" content="10.5250;79.6420" />
+  <meta name="ICBM" content="10.5250, 79.6420" />
 
-/* SECTIONS */
-section{padding:120px 64px}
-.section-label{font-family:var(--font-u);font-size:0.63rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:block}
-.section-title{font-family:var(--font-d);font-size:clamp(2rem,4vw,3.2rem);font-weight:700;line-height:1.1;letter-spacing:-0.01em;color:var(--white);margin-bottom:18px}
-.section-sub{font-family:var(--font-b);font-size:1rem;font-weight:300;color:var(--white-mid);max-width:540px;line-height:1.85}
-.text-gold{color:var(--gold)}
-.gold-line{width:48px;height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin-bottom:32px}
-.container{max-width:1200px;margin:0 auto}
-.reveal{opacity:0;transform:translateY(36px);transition:opacity 0.7s ease,transform 0.7s ease}
-.reveal.visible{opacity:1;transform:translateY(0)}
+  <!-- ══ Structured Data (Local Business) ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Devi Interiors & PVC Doors",
+    "description": "Premium interior design, modular kitchens, PVC doors, wardrobes and false ceilings in Thiruthuraipoondi, Tamil Nadu.",
+    "url": "https://deviinteriors.in",
+    "telephone": "+918608140709",
+    "email": "deviinteriorsttp@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Tiruvarur Road, near Arubadai Murugan Kovil",
+      "addressLocality": "Thiruthuraipoondi",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "614713",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 10.5250,
+      "longitude": 79.6420
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "156",
+      "bestRating": "5"
+    },
+    "sameAs": [
+      "https://instagram.com/DEVI_INTERIORS__"
+    ],
+    "image": "https://deviinteriors.in/images/og-image.jpg",
+    "priceRange": "₹₹"
+  }
+  </script>
 
-/* ABOUT */
-.about{background:var(--black-soft)}
-.about-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-.about-img-wrap{position:relative;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/5;background:var(--black-card)}
-.about-img-wrap::after{content:'';position:absolute;inset:0;border:1px solid var(--gold-border);border-radius:var(--radius-lg);pointer-events:none}
-.about-tag{position:absolute;bottom:24px;left:24px;background:rgba(11,11,11,0.9);backdrop-filter:blur(12px);border:1px solid var(--gold-border);border-radius:12px;padding:14px 20px;z-index:2}
-.about-tag .num{font-family:var(--font-d);font-size:2rem;font-weight:800;color:var(--gold);line-height:1}
-.about-tag .lbl{font-size:0.7rem;color:var(--white-mid);letter-spacing:0.08em;text-transform:uppercase}
-.about-desc{font-size:1.05rem;color:var(--white-mid);line-height:1.85;margin-bottom:52px}
-.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.stat-card{background:var(--glass);border:1px solid var(--glass-border);border-radius:var(--radius);padding:24px 22px;transition:var(--t);position:relative;overflow:hidden}
-.stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,var(--gold),transparent);opacity:0;transition:opacity 0.4s}
-.stat-card:hover{border-color:var(--gold-border);box-shadow:var(--shadow-gold);transform:translateY(-4px)}
-.stat-card:hover::before{opacity:1}
-.stat-num{font-family:var(--font-d);font-size:1.9rem;font-weight:800;color:var(--gold);line-height:1;margin-bottom:6px}
-.stat-label{font-size:0.75rem;color:var(--white-mid);letter-spacing:0.06em;text-transform:uppercase}
+  <!-- ══ Preconnect for faster font loading ══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-/* SERVICES PREVIEW */
-.services-preview{background:var(--black)}
-.section-header{margin-bottom:64px}
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.service-card{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;cursor:pointer;background:var(--black-card);border:1px solid var(--glass-border);transition:border-color 0.4s,box-shadow 0.4s}
-.service-card:hover{border-color:var(--gold-border);box-shadow:var(--shadow-gold)}
-.service-card-img{position:absolute;inset:0;transition:transform 0.7s ease;background:var(--black-card)}
-.service-card-img img{transition:transform 0.7s ease}
-.service-card:hover .service-card-img img{transform:scale(1.08)}
-.service-card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(11,11,11,0.92) 0%,rgba(11,11,11,0.15) 60%,transparent 100%);transition:var(--t)}
-.service-card-content{position:absolute;bottom:0;left:0;right:0;padding:30px 26px}
-.service-card-icon{width:44px;height:44px;border:1px solid var(--gold-border);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;font-size:1.1rem;transition:var(--t);background:rgba(11,11,11,0.5)}
-.service-card:hover .service-card-icon{background:var(--gold);border-color:var(--gold)}
-.service-card-title{font-family:var(--font-d);font-size:1.2rem;font-weight:600;color:var(--white);margin-bottom:8px}
-.service-card-desc{font-size:0.8rem;color:var(--white-mid);line-height:1.6;max-height:0;overflow:hidden;transition:max-height 0.5s ease}
-.service-card:hover .service-card-desc{max-height:80px}
+  <!-- ══ Fonts ══ -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-/* REVIEWS */
-.reviews{background:var(--black-mid);position:relative;overflow:hidden}
-.reviews::before{content:'';position:absolute;top:-200px;left:50%;transform:translateX(-50%);width:700px;height:700px;background:radial-gradient(circle,rgba(212,175,55,0.05) 0%,transparent 70%);pointer-events:none}
-.reviews-header{text-align:center;margin-bottom:72px}
-.rating-display{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:14px}
-.rating-big{font-family:var(--font-d);font-size:5rem;font-weight:800;color:var(--gold);line-height:1}
-.rating-stars{display:flex;flex-direction:column;gap:6px}
-.stars{display:flex;gap:3px;font-size:1.3rem}
-.rating-count{font-size:0.75rem;color:var(--white-mid);letter-spacing:0.08em}
-.reviews-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.review-card{background:var(--glass);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:36px 32px;position:relative;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:var(--t);overflow:hidden}
-.review-card::before{content:'"';position:absolute;top:-10px;right:24px;font-family:Georgia,serif;font-size:8rem;color:var(--gold);opacity:0.07;line-height:1}
-.review-card:hover{border-color:var(--gold-border);box-shadow:var(--shadow-gold);transform:translateY(-6px)}
-.review-stars{display:flex;gap:3px;font-size:0.9rem;margin-bottom:18px}
-.review-text{font-size:0.95rem;color:var(--white-mid);line-height:1.82;font-style:italic;margin-bottom:28px}
-.review-author{display:flex;align-items:center;gap:14px}
-.review-avatar{width:44px;height:44px;border-radius:50%;background:var(--gold-dim);border:1px solid var(--gold-border);display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-weight:700;color:var(--gold);font-size:1rem;flex-shrink:0}
-.review-name{font-weight:600;font-size:0.92rem}
-.review-date{font-size:0.7rem;color:var(--white-mid)}
+  <!-- ══ Icons ══ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-/* CTA */
-.cta-section{background:var(--black-soft);text-align:center;padding:100px 64px}
-.cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-
-/* SERVICES FULL PAGE */
-.services-full{background:var(--black)}
-.services-full-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-.service-full-card{background:var(--black-card);border:1px solid var(--glass-border);border-radius:var(--radius-lg);overflow:hidden;transition:var(--t)}
-.service-full-card:hover{border-color:var(--gold-border);box-shadow:var(--shadow-gold),var(--shadow-deep);transform:translateY(-8px)}
-.service-full-img{aspect-ratio:16/10;overflow:hidden;background:var(--black-mid)}
-.service-full-img img{transition:transform 0.7s ease}
-.service-full-card:hover .service-full-img img{transform:scale(1.08)}
-.service-full-body{padding:28px 26px 32px}
-.service-number{font-family:var(--font-d);font-size:0.65rem;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;margin-bottom:10px}
-.service-full-title{font-family:var(--font-d);font-size:1.3rem;font-weight:700;color:var(--white);margin-bottom:12px}
-.service-full-desc{font-size:0.86rem;color:var(--white-mid);line-height:1.78;margin-bottom:20px}
-.service-tag{display:inline-block;padding:5px 14px;border:1px solid var(--gold-border);border-radius:40px;font-size:0.68rem;color:var(--gold);letter-spacing:0.1em;margin:3px 3px 0 0;background:var(--gold-dim)}
-
-/* GALLERY */
-.gallery-section{background:var(--black)}
-.gallery-filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:48px}
-.filter-btn{padding:9px 22px;border-radius:40px;border:1px solid var(--glass-border);background:transparent;color:var(--white-mid);font-family:var(--font-u);font-size:0.73rem;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:var(--t)}
-.filter-btn:hover,.filter-btn.active{border-color:var(--gold);color:var(--gold);background:var(--gold-dim)}
-.gallery-masonry{columns:3;column-gap:16px}
-.gallery-item{break-inside:avoid;margin-bottom:16px;border-radius:var(--radius);overflow:hidden;position:relative;cursor:pointer;background:var(--black-card)}
-.gallery-item img{display:block;width:100%;height:auto;transition:transform 0.65s ease}
-.gallery-item:hover img{transform:scale(1.06)}
-.gallery-overlay{position:absolute;inset:0;background:rgba(11,11,11,0);display:flex;align-items:flex-end;padding:24px;transition:background 0.4s ease}
-.gallery-item:hover .gallery-overlay{background:rgba(11,11,11,0.65)}
-.gallery-label{font-family:var(--font-d);font-size:0.92rem;font-weight:600;color:var(--white);transform:translateY(10px);opacity:0;transition:var(--t)}
-.gallery-label::before{content:'';display:block;width:24px;height:1px;background:var(--gold);margin-bottom:8px}
-.gallery-item:hover .gallery-label{transform:translateY(0);opacity:1}
-.lightbox{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.96);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.4s}
-.lightbox.active{opacity:1;pointer-events:all}
-.lightbox-img{max-width:90vw;max-height:85vh;object-fit:contain;border-radius:var(--radius);transform:scale(0.9);transition:transform 0.4s ease;width:auto;height:auto}
-.lightbox.active .lightbox-img{transform:scale(1)}
-.lightbox-close{position:absolute;top:28px;right:36px;font-size:2rem;color:var(--white-mid);cursor:pointer;background:none;border:none;transition:color 0.3s;line-height:1;z-index:10000}
-.lightbox-close:hover{color:var(--gold)}
-
-/* CONTACT */
-.contact-section{background:var(--black)}
-.contact-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
-.contact-cards{display:flex;flex-direction:column;gap:18px;margin-bottom:36px}
-.contact-card{display:flex;align-items:center;gap:18px;background:var(--glass);border:1px solid var(--glass-border);border-radius:var(--radius);padding:22px;transition:var(--t)}
-.contact-card:hover{border-color:var(--gold-border);box-shadow:var(--shadow-gold);transform:translateX(6px)}
-.contact-icon{width:48px;height:48px;border-radius:50%;background:var(--gold-dim);border:1px solid var(--gold-border);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
-.contact-detail .label{font-size:0.65rem;color:var(--white-mid);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:3px}
-.contact-detail .value{font-size:0.92rem;font-weight:500;color:var(--white)}
-.contact-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:20px}
-.contact-ig{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);border-radius:var(--radius);color:#fff;font-size:0.82rem;font-weight:600;letter-spacing:0.04em;transition:var(--t)}
-.contact-ig:hover{opacity:0.88;transform:translateY(-3px);box-shadow:0 10px 32px rgba(253,29,29,0.3)}
-.hours-card{background:var(--glass);border:1px solid var(--glass-border);border-radius:var(--radius);padding:24px;margin-top:24px}
-.hours-card h4{font-family:var(--font-d);font-size:0.88rem;color:var(--gold);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px}
-.hours-row{display:flex;justify-content:space-between;font-size:0.8rem;color:var(--white-mid);padding:8px 0;border-bottom:1px solid var(--glass-border)}
-.hours-row:last-child{border-bottom:none}
-.hours-row .day{color:var(--white);font-weight:500}
-.hours-row .open{color:var(--gold)}
-.map-wrap{border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--glass-border);aspect-ratio:4/5;position:sticky;top:100px}
-.map-wrap iframe{width:100%;height:100%;border:none;filter:grayscale(85%) contrast(1.1) brightness(0.65)}
-
-/* FOOTER */
-footer{background:var(--black-soft);border-top:1px solid var(--glass-border);padding:52px 64px 32px}
-.footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;padding-bottom:28px;border-bottom:1px solid var(--glass-border);margin-bottom:24px}
-.footer-logo .brand{font-family:var(--font-d);font-size:1.1rem;font-weight:700;color:var(--gold)}
-.footer-logo .sub{font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--white-mid)}
-.footer-links{display:flex;gap:32px}
-.footer-links a{font-size:0.75rem;color:var(--white-mid);letter-spacing:0.1em;text-transform:uppercase;transition:color 0.3s}
-.footer-links a:hover{color:var(--gold)}
-.footer-social{display:flex;gap:14px}
-.social-icon{width:38px;height:38px;border:1px solid var(--glass-border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.88rem;color:var(--white-mid);transition:var(--t)}
-.social-icon:hover{border-color:var(--gold);color:var(--gold);box-shadow:0 0 18px rgba(212,175,55,0.22);transform:translateY(-3px)}
-.footer-bottom{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
-.footer-copy{font-size:0.7rem;color:var(--white-mid)}
-.footer-rating{display:flex;align-items:center;gap:8px;font-size:0.7rem;color:var(--white-mid)}
-
-/* FLOATING */
-.float-btns{position:fixed;bottom:32px;right:26px;z-index:900;display:flex;flex-direction:column;gap:14px}
-.float-btn{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.35rem;box-shadow:0 8px 28px rgba(0,0,0,0.5);transition:var(--t);text-decoration:none;animation:floatPulse 3s ease-in-out infinite;position:relative}
-.float-btn:nth-child(2){animation-delay:0.5s}
-.float-wa{background:#25D366;color:#fff}
-.float-wa:hover{transform:scale(1.12) translateY(-3px);box-shadow:0 0 30px rgba(37,211,102,0.55)}
-.float-call{background:var(--gold);color:var(--black)}
-.float-call:hover{transform:scale(1.12) translateY(-3px);box-shadow:0 0 30px rgba(212,175,55,0.55)}
-@keyframes floatPulse{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-.float-tooltip{position:absolute;right:68px;top:50%;transform:translateY(-50%);background:rgba(11,11,11,0.92);border:1px solid var(--glass-border);border-radius:8px;padding:6px 12px;font-size:0.7rem;color:var(--white);white-space:nowrap;opacity:0;pointer-events:none;transition:opacity 0.3s;font-family:var(--font-u)}
-.float-btn:hover .float-tooltip{opacity:1}
-
-/* CURSOR GLOW */
-.cursor-glow{position:fixed;pointer-events:none;z-index:9998;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(212,175,55,0.05) 0%,transparent 70%);transform:translate(-50%,-50%);transition:left 0.14s ease,top 0.14s ease;will-change:left,top}
-
-/* RESPONSIVE */
-@media(max-width:1024px){
-  section{padding:88px 40px}
-  .navbar,.navbar.scrolled{padding:18px 40px}
-  .about-inner{grid-template-columns:1fr;gap:48px}
-  .services-grid,.services-full-grid{grid-template-columns:repeat(2,1fr)}
-  .reviews-grid{grid-template-columns:1fr 1fr}
-  .contact-inner{grid-template-columns:1fr}
-  .map-wrap{position:static;aspect-ratio:16/9}
-  .gallery-masonry{columns:2}
-  footer{padding:40px 40px 24px}
-}
-@media(max-width:768px){
-  section{padding:72px 24px}
-  .navbar,.navbar.scrolled{padding:16px 24px}
-  .nav-links{display:none}
-  .hamburger{display:flex}
-  .services-grid,.services-full-grid{grid-template-columns:1fr}
-  .reviews-grid{grid-template-columns:1fr}
-  .stats-grid{grid-template-columns:1fr 1fr}
-  .gallery-masonry{columns:2}
-  footer{padding:36px 24px 20px}
-  .footer-inner{flex-direction:column;align-items:flex-start;gap:20px}
-  .footer-bottom{flex-direction:column;align-items:flex-start}
-  .cta-section{padding:72px 24px}
-  .float-btns{bottom:24px;right:18px}
-  .float-btn{width:50px;height:50px;font-size:1.2rem}
-}
-@media(max-width:480px){
-  .hero-title{font-size:2.2rem}
-  .gallery-masonry{columns:1}
-  .stats-grid{grid-template-columns:1fr}
-}
-</style>
+  <!-- ══ Stylesheet ══ -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- ══ NAVBAR ══ -->
 <nav class="navbar" id="navbar">
   <a href="index.html" class="nav-logo">
     <span class="brand">Devi Interiors</span>
@@ -302,11 +111,10 @@ footer{background:var(--black-soft);border-top:1px solid var(--glass-border);pad
   </a>
   <ul class="nav-links">
     <li><a href="index.html" class="active">Home</a></li>
-  
     <li><a href="gallery.html">Gallery</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
 </nav>
 <div class="mobile-overlay"></div>
 <div class="mobile-nav">
@@ -315,28 +123,28 @@ footer{background:var(--black-soft);border-top:1px solid var(--glass-border);pad
   <a href="contact.html">Contact</a>
 </div>
 
-<!-- HERO -->
+<!-- ══ HERO ══ -->
 <section class="hero">
   <div class="hero-bg" style="background-image:url('images/hero-bg.jpg')"></div>
   <div class="hero-overlay"></div>
   <canvas id="particles-canvas"></canvas>
   <div class="hero-content">
     <div class="hero-badge">⭐ 5.0 Rating &nbsp;·&nbsp; 156+ Happy Clients &nbsp;·&nbsp; Thiruthuraipoondi</div>
-    <h1 class="hero-title">Devi Interiors  &amp;<br/><span>PVC Doors</span></h1>
+    <h1 class="hero-title">Devi Interiors &amp;<br/><span>PVC Doors</span></h1>
     <p class="hero-sub">Modern interiors crafted with premium finishing and elegant designs for your dream home.</p>
     <div class="hero-btns">
       <a href="gallery.html" class="btn btn-gold"><i class="fa-solid fa-images"></i> View Projects</a>
-      <a href="https://wa.me/918608140709" target="_blank" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://wa.me/918608140709" target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
     </div>
   </div>
   <div class="scroll-indicator"><span>Scroll</span><div class="scroll-line"></div></div>
 </section>
 
-<!-- ABOUT -->
+<!-- ══ ABOUT ══ -->
 <section class="about">
   <div class="about-inner">
     <div class="about-img-wrap reveal">
-      <img src="images/devifront.png" alt="Premium interior by Devi Interiors" loading="lazy" style="border-radius:24px"/>
+      <img src="images/devifront.png" alt="Devi Interiors showroom — premium interior design Thiruthuraipoondi" loading="lazy" style="border-radius:24px"/>
       <div class="about-tag">
         <div class="num">5.0</div>
         <div class="lbl">Google Rating ⭐</div>
@@ -357,7 +165,7 @@ footer{background:var(--black-soft);border-top:1px solid var(--glass-border);pad
   </div>
 </section>
 
-<!-- SERVICES PREVIEW -->
+<!-- ══ SERVICES PREVIEW ══ -->
 <section class="services-preview">
   <div class="container">
     <div class="section-header reveal">
@@ -367,25 +175,78 @@ footer{background:var(--black-soft);border-top:1px solid var(--glass-border);pad
       <p class="section-sub">From modular kitchens to PVC doors — every detail crafted to perfection.</p>
     </div>
     <div class="services-grid">
-      <div class="service-card reveal" data-delay="0"><div class="service-card-img"><img src="images/p2.jpeg" alt="Modular Kitchen" loading="lazy"/></div><div class="service-card-overlay"></div><div class="service-card-content"><div class="service-card-icon">🍳</div><div class="service-card-title">Modular Kitchen</div><div class="service-card-desc">Custom modular kitchens with premium finishes and smart storage.</div></div></div>
-      <div class="service-card reveal" data-delay="80"><div class="service-card-img"><img src="images/p20.jpeg" alt="Pooja Unit Design" loading="lazy"/></div><div class="service-card-overlay"></div><div class="service-card-content"><div class="service-card-icon">🚪</div><div class="service-card-title">Pooja Unit Design</div><div class="service-card-desc">Waterproof, durable PVC doors in a variety of finishes and styles.</div></div></div>
-      <div class="service-card reveal" data-delay="160"><div class="service-card-img"><img src="images/p38.jpeg" alt="Cupboard Works" loading="lazy"/></div><div class="service-card-overlay"></div><div class="service-card-content"><div class="service-card-icon">🗄️</div><div class="service-card-title">Cupboard Works</div><div class="service-card-desc">Built-in cupboards and storage solutions designed for your space.</div></div></div>
-      <div class="service-card reveal" data-delay="240"><div class="service-card-img"><img src="images/p1.jpeg" alt="TV Unit" loading="lazy"/></div><div class="service-card-overlay"></div><div class="service-card-content"><div class="service-card-icon">📺</div><div class="service-card-title">TV Unit Design</div><div class="service-card-desc">Stunning TV units that anchor your living room beautifully.</div></div></div>
-      <div class="service-card reveal" data-delay="320"><div class="service-card-img"><img src="images/p29.jpeg" alt="False Ceiling" loading="lazy"/></div><div class="service-card-overlay"></div><div class="service-card-content"><div class="service-card-icon">✨</div><div class="service-card-title">Pooja Room Doors</div><div class="service-card-desc">Elegant false ceilings with LED lighting for dramatic ambiance.</div></div></div>
-      <div class="service-card reveal" data-delay="400"><div class="service-card-img"><img src="images/p34.jpeg" alt="Bedroom" loading="lazy"/></div><div class="service-card-overlay"></div><div class="service-card-content"><div class="service-card-icon">🛏️</div><div class="service-card-title">Glass Display Unit</div><div class="service-card-desc">Luxurious bedroom interiors with custom wardrobes and lighting.</div></div></div>
+      <div class="service-card reveal" data-delay="0">
+        <div class="service-card-img"><img src="images/p2.jpeg" alt="Modular Kitchen design Thiruthuraipoondi" loading="lazy"/></div>
+        <div class="service-card-overlay"></div>
+        <div class="service-card-content">
+          <div class="service-card-icon">🍳</div>
+          <div class="service-card-title">Modular Kitchen</div>
+          <div class="service-card-desc">Custom modular kitchens with premium finishes and smart storage.</div>
+        </div>
+      </div>
+      <div class="service-card reveal" data-delay="80">
+        <div class="service-card-img"><img src="images/p20.jpeg" alt="Pooja Unit Design" loading="lazy"/></div>
+        <div class="service-card-overlay"></div>
+        <div class="service-card-content">
+          <div class="service-card-icon">🪔</div>
+          <div class="service-card-title">Pooja Unit Design</div>
+          <div class="service-card-desc">Elegant pooja units crafted with devotion and fine finishing.</div>
+        </div>
+      </div>
+      <div class="service-card reveal" data-delay="160">
+        <div class="service-card-img"><img src="images/p38.jpeg" alt="Cupboard Works" loading="lazy"/></div>
+        <div class="service-card-overlay"></div>
+        <div class="service-card-content">
+          <div class="service-card-icon">🗄️</div>
+          <div class="service-card-title">Cupboard Works</div>
+          <div class="service-card-desc">Built-in cupboards and storage solutions designed for your space.</div>
+        </div>
+      </div>
+      <div class="service-card reveal" data-delay="240">
+        <div class="service-card-img"><img src="images/p1.jpeg" alt="TV Unit Design" loading="lazy"/></div>
+        <div class="service-card-overlay"></div>
+        <div class="service-card-content">
+          <div class="service-card-icon">📺</div>
+          <div class="service-card-title">TV Unit Design</div>
+          <div class="service-card-desc">Stunning TV units that anchor your living room beautifully.</div>
+        </div>
+      </div>
+      <div class="service-card reveal" data-delay="320">
+        <div class="service-card-img"><img src="images/p29.jpeg" alt="Pooja Room Doors" loading="lazy"/></div>
+        <div class="service-card-overlay"></div>
+        <div class="service-card-content">
+          <div class="service-card-icon">🚪</div>
+          <div class="service-card-title">Pooja Room Doors</div>
+          <div class="service-card-desc">Ornate pooja room doors with traditional and modern designs.</div>
+        </div>
+      </div>
+      <div class="service-card reveal" data-delay="400">
+        <div class="service-card-img"><img src="images/p34.jpeg" alt="Glass Display Unit" loading="lazy"/></div>
+        <div class="service-card-overlay"></div>
+        <div class="service-card-content">
+          <div class="service-card-icon">🪟</div>
+          <div class="service-card-title">Glass Display Unit</div>
+          <div class="service-card-desc">Elegant glass display cabinets for your living and dining spaces.</div>
+        </div>
+      </div>
     </div>
-    <div style="text-align:center;margin-top:52px;" class="reveal"><a href="services.html" class="btn btn-gold">Explore All Services <i class="fa-solid fa-arrow-right"></i></a></div>
+    <div style="text-align:center;margin-top:52px;" class="reveal">
+      <a href="gallery.html" class="btn btn-gold">View Our Work <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
   </div>
 </section>
 
-<!-- REVIEWS -->
+<!-- ══ REVIEWS ══ -->
 <section class="reviews">
   <div class="container">
     <div class="reviews-header reveal">
       <span class="section-label">Client Reviews</span>
       <div class="rating-display">
         <div class="rating-big">5.0</div>
-        <div class="rating-stars"><div class="stars">⭐⭐⭐⭐⭐</div><div class="rating-count">Based on 156 Google Reviews</div></div>
+        <div class="rating-stars">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="rating-count">Based on 156 Google Reviews</div>
+        </div>
       </div>
       <h2 class="section-title" style="margin-top:16px;">What Our <span class="text-gold">Clients Say</span></h2>
     </div>
@@ -393,221 +254,83 @@ footer{background:var(--black-soft);border-top:1px solid var(--glass-border);pad
       <div class="review-card reveal" data-delay="80">
         <div class="review-stars">⭐⭐⭐⭐⭐</div>
         <p class="review-text">"Excellent work! The modular kitchen they built for my home is absolutely stunning. The quality, finishing, and attention to detail is beyond what I expected. Highly recommend Devi Interiors!"</p>
-        <div class="review-author"><div class="review-avatar">R</div><div><div class="review-name">Ramesh Kumar</div><div class="review-date">Google Review · 2 months ago</div></div></div>
+        <div class="review-author">
+          <div class="review-avatar">R</div>
+          <div>
+            <div class="review-name">Ramesh Kumar</div>
+            <div class="review-date">Google Review · 2 months ago</div>
+          </div>
+        </div>
       </div>
       <div class="review-card reveal" data-delay="200">
         <div class="review-stars">⭐⭐⭐⭐⭐</div>
         <p class="review-text">"The PVC doors and false ceiling work done by this team is top-notch. Very professional, on-time delivery, and fair pricing. Our home looks like a luxury showroom now. 100% satisfied!"</p>
-        <div class="review-author"><div class="review-avatar">P</div><div><div class="review-name">Priya Lakshmi</div><div class="review-date">Google Review · 1 month ago</div></div></div>
+        <div class="review-author">
+          <div class="review-avatar">P</div>
+          <div>
+            <div class="review-name">Priya Lakshmi</div>
+            <div class="review-date">Google Review · 1 month ago</div>
+          </div>
+        </div>
       </div>
     </div>
-    <div style="text-align:center;margin-top:48px;" class="reveal"><a href="https://maps.google.com/?q=Devi+Interiors+Thiruthuraipoondi" target="_blank" class="btn btn-outline"><i class="fa-brands fa-google"></i> See All 156 Reviews</a></div>
-  </div>
-</section>
+   <div style="text-align:center;margin-top:48px;" class="reveal">
+  <a href="https://www.google.com/search?q=Devi+Interiors+%26+PVC+Doors+Reviews"
+     target="_blank"
+     rel="noopener"
+     class="btn btn-outline">
+    <i class="fa-brands fa-google"></i> See All 156 Reviews
+  </a>
+</div>
 
-<!-- CTA -->
+<!-- ══ CTA ══ -->
 <section class="cta-section">
   <span class="section-label reveal" style="display:block;text-align:center;">Get Started</span>
   <h2 class="section-title reveal">Let's Build Your <span class="text-gold">Dream Interior</span></h2>
   <p class="section-sub reveal" style="text-align:center;margin:0 auto 48px;">Based in Thiruthuraipoondi — serving homes across Tamil Nadu with premium finishing.</p>
   <div class="cta-btns reveal">
     <a href="tel:+918608140709" class="btn btn-gold"><i class="fa-solid fa-phone"></i> Call Now</a>
-    <a href="https://wa.me/918608140709" target="_blank" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+    <a href="https://wa.me/918608140709" target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
     <a href="contact.html" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Contact Us</a>
   </div>
 </section>
-<!-- FOOTER -->
+
+<!-- ══ FOOTER ══ -->
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">
       <div class="brand">Devi Interiors &amp; PVC Doors</div>
       <div class="sub">Thiruthuraipoondi, Tamil Nadu</div>
     </div>
-
-    <nav class="footer-links">
+    <nav class="footer-links" aria-label="Footer navigation">
       <a href="index.html">Home</a>
       <a href="gallery.html">Gallery</a>
       <a href="contact.html">Contact</a>
     </nav>
-
     <div class="footer-social">
-      <a href="https://instagram.com/DEVI_INTERIORS__" target="_blank" class="social-icon">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-
-      <a href="https://wa.me/918608140709" target="_blank" class="social-icon">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-
-      <a href="tel:+918608140709" class="social-icon">
-        <i class="fa-solid fa-phone"></i>
-      </a>
+      <a href="https://instagram.com/DEVI_INTERIORS__" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.me/918608140709" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="tel:+918608140709" class="social-icon" aria-label="Call us"><i class="fa-solid fa-phone"></i></a>
     </div>
   </div>
-
   <div class="footer-bottom">
-    <div class="footer-copy">
-      &copy; 2024 Devi Interiors &amp; PVC Doors. All rights reserved.
-    </div>
-
-    <div class="footer-rating">
-      <span class="stars">⭐⭐⭐⭐⭐</span> 5.0 · 156 Reviews on Google
-    </div>
+    <div class="footer-copy">&copy; 2024 Devi Interiors &amp; PVC Doors. All rights reserved.</div>
+    <div class="footer-rating"><span class="stars">⭐⭐⭐⭐⭐</span> 5.0 · 156 Reviews on Google</div>
   </div>
 </footer>
 
-<!-- FLOATING BUTTONS -->
+<!-- ══ FLOATING BUTTONS ══ -->
 <div class="float-btns">
-  <a href="https://wa.me/918608140709" target="_blank" class="float-btn float-wa" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i><span class="float-tooltip">Chat on WhatsApp</span></a>
-  <a href="tel:+918608140709" class="float-btn float-call" aria-label="Call"><i class="fa-solid fa-phone"></i><span class="float-tooltip">Call Us</span></a>
+  <a href="https://wa.me/918608140709" target="_blank" rel="noopener" class="float-btn float-wa" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="float-tooltip">Chat on WhatsApp</span>
+  </a>
+  <a href="tel:+918608140709" class="float-btn float-call" aria-label="Call us">
+    <i class="fa-solid fa-phone"></i>
+    <span class="float-tooltip">Call Us</span>
+  </a>
 </div>
 
-<script>
-// ── Navbar scroll ──
-(function(){
-  var nb=document.querySelector('.navbar');
-  if(!nb)return;
-  function onScroll(){nb.classList.toggle('scrolled',window.scrollY>50)}
-  window.addEventListener('scroll',onScroll,{passive:true});
-  onScroll();
-})();
-
-// ── Active link ──
-(function(){
-  var page=location.pathname.split('/').pop()||'index.html';
-  document.querySelectorAll('.nav-links a,.mobile-nav a').forEach(function(a){
-    var h=a.getAttribute('href')||'';
-    if(h===page||(page===''&&h==='index.html'))a.classList.add('active');
-  });
-})();
-
-// ── Mobile menu ──
-(function(){
-  var hb=document.querySelector('.hamburger');
-  var mn=document.querySelector('.mobile-nav');
-  var ov=document.querySelector('.mobile-overlay');
-  if(!hb)return;
-  function close(){hb.classList.remove('open');mn.classList.remove('open');ov.classList.remove('open');document.body.style.overflow=''}
-  hb.addEventListener('click',function(){
-    var o=mn.classList.toggle('open');
-    hb.classList.toggle('open',o);
-    ov.classList.toggle('open',o);
-    document.body.style.overflow=o?'hidden':'';
-  });
-  ov.addEventListener('click',close);
-  document.querySelectorAll('.mobile-nav a').forEach(function(a){a.addEventListener('click',close)});
-})();
-
-// ── Reveal on scroll ──
-(function(){
-  var els=document.querySelectorAll('.reveal');
-  if(!els.length)return;
-  var io=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(!e.isIntersecting)return;
-      var delay=parseInt(e.target.dataset.delay)||0;
-      setTimeout(function(){e.target.classList.add('visible')},delay);
-      io.unobserve(e.target);
-    });
-  },{threshold:0.1,rootMargin:'0px 0px -30px 0px'});
-  els.forEach(function(el,i){
-    if(!el.dataset.delay)el.dataset.delay=i*70;
-    io.observe(el);
-  });
-})();
-
-// ── Particles ──
-(function(){
-  var canvas=document.getElementById('particles-canvas');
-  if(!canvas)return;
-  var ctx=canvas.getContext('2d');
-  var W,H,particles=[];
-  function resize(){W=canvas.width=canvas.offsetWidth;H=canvas.height=canvas.offsetHeight}
-  function Particle(){this.reset()}
-  Particle.prototype.reset=function(){
-    this.x=Math.random()*W;this.y=Math.random()*H;
-    this.r=Math.random()*1.8+0.3;this.alpha=Math.random()*0.5+0.08;
-    this.vx=(Math.random()-0.5)*0.28;this.vy=-(Math.random()*0.45+0.12);
-    this.life=0;this.maxLife=Math.random()*220+80;
-  };
-  Particle.prototype.update=function(){this.x+=this.vx;this.y+=this.vy;this.life++;if(this.life>this.maxLife||this.y<-10)this.reset()};
-  Particle.prototype.draw=function(){
-    var p=this.life/this.maxLife;
-    var a=this.alpha*(1-Math.pow(p-0.5,2)*4);
-    ctx.beginPath();ctx.arc(this.x,this.y,this.r,0,Math.PI*2);
-    ctx.fillStyle='rgba(212,175,55,'+Math.max(0,a)+')';ctx.fill();
-  };
-  resize();
-  particles=Array.from({length:55},function(){return new Particle()});
-  function loop(){ctx.clearRect(0,0,W,H);particles.forEach(function(p){p.update();p.draw()});requestAnimationFrame(loop)}
-  loop();
-  window.addEventListener('resize',resize);
-})();
-
-// ── Counter ──
-(function(){
-  var counters=document.querySelectorAll('.stat-num[data-target]');
-  if(!counters.length)return;
-  var io=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(!e.isIntersecting)return;
-      var el=e.target,target=parseInt(el.dataset.target),suffix=el.dataset.suffix||'',dur=1600,start=performance.now();
-      function tick(now){var prog=Math.min((now-start)/dur,1),ease=1-Math.pow(1-prog,3);el.textContent=Math.round(ease*target)+suffix;if(prog<1)requestAnimationFrame(tick)}
-      requestAnimationFrame(tick);
-      io.unobserve(el);
-    });
-  },{threshold:0.4});
-  counters.forEach(function(c){io.observe(c)});
-})();
-
-// ── Gallery filter ──
-(function(){
-  var btns=document.querySelectorAll('.filter-btn');
-  var items=document.querySelectorAll('.gallery-item');
-  if(!btns.length)return;
-  btns.forEach(function(btn){
-    btn.addEventListener('click',function(){
-      btns.forEach(function(b){b.classList.remove('active')});
-      btn.classList.add('active');
-      var f=btn.dataset.filter;
-      items.forEach(function(item){
-        var match=f==='all'||item.dataset.category===f;
-        item.style.transition='opacity 0.4s,transform 0.4s';
-        if(match){item.style.opacity='1';item.style.transform='scale(1)';item.style.display='block'}
-        else{item.style.opacity='0';item.style.transform='scale(0.95)';setTimeout(function(){if(item.style.opacity==='0')item.style.display='none'},420)}
-      });
-    });
-  });
-})();
-
-// ── Lightbox ──
-(function(){
-  var lb=document.querySelector('.lightbox');
-  if(!lb)return;
-  var lbImg=lb.querySelector('.lightbox-img');
-  var lbClose=lb.querySelector('.lightbox-close');
-  document.querySelectorAll('.gallery-item').forEach(function(item){
-    item.addEventListener('click',function(){
-      var src=item.querySelector('img');
-      if(!src)return;
-      lbImg.src=src.src;
-      lb.classList.add('active');
-      document.body.style.overflow='hidden';
-    });
-  });
-  function close(){lb.classList.remove('active');document.body.style.overflow='';setTimeout(function(){lbImg.src=''},400)}
-  lbClose.addEventListener('click',close);
-  lb.addEventListener('click',function(e){if(e.target===lb)close()});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
-})();
-
-// ── Cursor glow ──
-(function(){
-  if(window.matchMedia('(pointer:coarse)').matches)return;
-  var g=document.createElement('div');g.className='cursor-glow';
-  document.body.appendChild(g);
-  document.addEventListener('mousemove',function(e){g.style.left=e.clientX+'px';g.style.top=e.clientY+'px'});
-})();
-</script>
+<script src="script.js"></script>
 </body>
 </html>

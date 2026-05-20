@@ -3,10 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery — Devi Interiors & PVC Doors</title>
-  <meta name="description" content="Browse our luxury interior portfolio — modular kitchens, PVC wardrobes, TV units, false ceilings and bedroom interiors in Thiruthuraipoondi." />
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- ══ Primary SEO ══ -->
+  <title>Gallery — Devi Interiors & PVC Doors | Thiruthuraipoondi</title>
+  <meta name="description" content="Browse our luxury interior portfolio — modular kitchens, PVC wardrobes, TV units, false ceilings and bedroom interiors in Thiruthuraipoondi, Tamil Nadu. 5.0 ⭐ Google Rating." />
+  <meta name="keywords" content="interior design gallery Thiruthuraipoondi, modular kitchen photos, PVC wardrobe design, TV unit gallery, false ceiling design Tamil Nadu" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://deviinteriors.in/gallery.html" />
+
+  <!-- ══ Open Graph ══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Devi Interiors & PVC Doors" />
+  <meta property="og:title" content="Project Gallery — Devi Interiors & PVC Doors" />
+  <meta property="og:description" content="Real projects. Premium finishing. Satisfied clients. Browse our interior design gallery in Thiruthuraipoondi." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://deviinteriors.in/gallery.html" />
+
+  <!-- ══ Favicon ══ -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230B0B0B'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='serif' font-size='22' font-weight='bold' fill='%23D4AF37'%3ED%3C/text%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#0B0B0B" />
+
+  <!-- ══ Preconnect ══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- ══ Fonts & Icons ══ -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -14,16 +39,14 @@
 <nav class="navbar" id="navbar">
   <a href="index.html" class="nav-logo">
     <span class="brand">Devi Interiors</span>
-    <span class="sub">& PVC Doors — Thiruthuraipoondi</span>
+    <span class="sub">&amp; PVC Doors — Thiruthuraipoondi</span>
   </a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="gallery.html" class="active">Gallery</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <button class="hamburger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
+  <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
 </nav>
 <div class="mobile-overlay"></div>
 <div class="mobile-nav">
@@ -53,7 +76,10 @@
       <p class="section-sub">Real projects. Premium finishing. Satisfied clients.</p>
     </div>
 
-    <!-- Filter -->
+    <!-- ── Filter buttons ──
+         To add a new category: add a button here AND add items with that
+         category in the GALLERY_ITEMS array in script.js. Nothing else needed.
+    -->
     <div class="gallery-filters reveal" data-delay="100">
       <button class="filter-btn active" data-filter="all">All Projects</button>
       <button class="filter-btn" data-filter="kitchen">Kitchen</button>
@@ -62,102 +88,24 @@
       <button class="filter-btn" data-filter="tvunit">TV Unit</button>
       <button class="filter-btn" data-filter="ceiling">Ceiling</button>
       <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+      <button class="filter-btn" data-filter="pooja">Pooja</button>
+      <button class="filter-btn" data-filter="glass">Display</button>
     </div>
 
-    <!-- Masonry Grid -->
-    <div class="gallery-masonry">
-
-      <div class="gallery-item reveal" data-category="kitchen">
-        <img src="images/p1.jpeg" alt="Modular Kitchen Project 1" loading="lazy" />
-        <div class="gallery-overlay">
-          <div class="gallery-label"></div>
-        </div>
-      </div>
-
-      <div class="gallery-item reveal" data-category="bedroom" data-delay="60">
-        <img src="images/p2.jpeg" alt="Bedroom Interior" loading="lazy" />
-        <div class="gallery-overlay">
-          <div class="gallery-label"></div>
-        </div>
-      </div>
-
-      <div class="gallery-item reveal" data-category="tvunit" data-delay="120">
-        <img src="images/p5.jpeg" alt="Luxury TV Unit" loading="lazy" />
-        <div class="gallery-overlay">
-          <div class="gallery-label"></div>
-        </div>
-      </div>
-
-      <div class="gallery-item reveal" data-category="wardrobe" data-delay="0">
-        <img src="images/p7.jpeg" alt="PVC Wardrobe" loading="lazy" />
-        <div class="gallery-overlay">
-          <div class="gallery-label"></div>
-        </div>
-      </div>
-
-      <div class="gallery-item reveal" data-category="ceiling" data-delay="80">
-        <img src="images/p8.jpeg" alt="False Ceiling" loading="lazy" />
-        <div class="gallery-overlay">
-          <div class="gallery-label"></div>
-        </div>
-      </div>
-
-      <div class="gallery-item reveal" data-category="kitchen" data-delay="160">
-        <img src="images/p14.jpeg" alt="Premium Kitchen" loading="lazy" />
-        <div class="gallery-overlay">
-          <div class="gallery-label"></div>
-        </div>
-      </div>
-
-      <div class="gallery-item reveal" data-category="door" data-delay="0">
-        <img src="images/p16.jpeg" alt="PVC Door" loading="lazy" />
-        <div class="gallery-overlay">
-          <div class="gallery-label"></div>
-        </div>
-      </div>
-
-      <div class="gallery-item reveal" data-category="wardrobe" data-delay="80">
-        <img src="images/p18.jpeg" alt="Premium Cupboard" loading="lazy" />
-        <div class="gallery-overlay">
-          <div class="gallery-label"></div>
-        </div>
-      </div>
-
-      <div class="gallery-item reveal" data-category="bedroom" data-delay="160">
-        <img src="images/p22.jpeg" alt="Luxury Bedroom" loading="lazy" />
-        <div class="gallery-overlay">
-          <div class="gallery-label"></div>
-        </div>
-      </div>
-
-      <div class="gallery-item reveal" data-category="tvunit" data-delay="0">
-        <img src="images/p33.jpeg" alt="TV Panel Design" loading="lazy" />
-        <div class="gallery-overlay">
-          <div class="gallery-label"></div>
-        </div>
-      </div>
-
-      <div class="gallery-item reveal" data-category="ceiling" data-delay="80">
-        <img src="images/p37.jpeg" alt="LED False Ceiling" loading="lazy" />
-        <div class="gallery-overlay">
-          <div class="gallery-label"></div>
-        </div>
-      </div>
-
-      <div class="gallery-item reveal" data-category="kitchen" data-delay="160">
-        <img src="images/p34.jpeg" alt="Elegant Kitchen" loading="lazy" />
-        <div class="gallery-overlay">
-          <div class="gallery-label"></div>
-        </div>
-      </div>
-
+    <!-- ── Gallery masonry container ──
+         Items are injected here dynamically by script.js from GALLERY_ITEMS.
+         To add photos: add entries to GALLERY_ITEMS in script.js.
+         The grid auto-expands with no fixed slots.
+    -->
+    <div class="gallery-masonry" id="gallery-masonry">
+      <!-- Populated by script.js — see GALLERY_ITEMS array -->
     </div>
 
     <!-- CTA -->
     <div style="text-align:center;margin-top:72px;" class="reveal">
       <p style="color:var(--white-mid);font-size:0.95rem;margin-bottom:28px;">Inspired by what you see? Let's create something extraordinary for your home.</p>
       <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-        <a href="https://wa.me/918608140709" target="_blank" class="btn btn-gold">
+        <a href="https://wa.me/918608140709" target="_blank" rel="noopener" class="btn btn-gold">
           <i class="fa-brands fa-whatsapp"></i> Get a Free Quote
         </a>
         <a href="contact.html" class="btn btn-outline">
@@ -169,12 +117,6 @@
   </div>
 </section>
 
-<!-- Lightbox -->
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-close" id="lb-close" aria-label="Close">&times;</button>
-  <img class="lightbox-img" src="" alt="Gallery Image" id="lb-img" />
-</div>
-
 <!-- ══ FOOTER ══ -->
 <footer>
   <div class="footer-inner">
@@ -182,15 +124,15 @@
       <div class="brand">Devi Interiors &amp; PVC Doors</div>
       <div class="sub">Thiruthuraipoondi, Tamil Nadu</div>
     </div>
-    <nav class="footer-links">
+    <nav class="footer-links" aria-label="Footer navigation">
       <a href="index.html">Home</a>
       <a href="gallery.html">Gallery</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="footer-social">
-      <a href="https://instagram.com/DEVI_INTERIORS__" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://wa.me/918608140709" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
-      <a href="tel:+918608140709" class="social-icon"><i class="fa-solid fa-phone"></i></a>
+      <a href="https://instagram.com/DEVI_INTERIORS__" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.me/918608140709" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="tel:+918608140709" class="social-icon" aria-label="Call us"><i class="fa-solid fa-phone"></i></a>
     </div>
   </div>
   <div class="footer-bottom">
@@ -201,11 +143,11 @@
 
 <!-- ══ FLOATING BUTTONS ══ -->
 <div class="float-btns">
-  <a href="https://wa.me/918608140709" target="_blank" class="float-btn float-wa" aria-label="WhatsApp">
+  <a href="https://wa.me/918608140709" target="_blank" rel="noopener" class="float-btn float-wa" aria-label="Chat on WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
     <span class="float-tooltip">Chat on WhatsApp</span>
   </a>
-  <a href="tel:+918608140709" class="float-btn float-call" aria-label="Call">
+  <a href="tel:+918608140709" class="float-btn float-call" aria-label="Call us">
     <i class="fa-solid fa-phone"></i>
     <span class="float-tooltip">Call Us</span>
   </a>
